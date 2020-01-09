@@ -197,30 +197,60 @@ class _HomePageState extends State<HomePage>
                       ),
                     ),    
 
-            new Row
-            (
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // new Row
+            // (
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-              children: <Widget>
-              [
-                new Text
-                (
-                  date,
-                  style: Theme.of(context).textTheme.subtitle,
-                  textAlign: TextAlign.center,
+            //   children: <Widget>
+            //   [
+            //     new Text
+            //     (
+            //       date,
+            //       style: Theme.of(context).textTheme.subtitle,
+            //       textAlign: TextAlign.center,
 
-                ),
+            //     ),
 
-                new Text
-                (
-                  time,
-                  style: Theme.of(context).textTheme.subtitle,
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
+            //     new Text
+            //     (
+            //       time,
+            //       style: Theme.of(context).textTheme.subtitle,
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ],
+            // ),
  
-            SizedBox(height: 20.0,),
+            // SizedBox(height: 20.0,),
+
+            Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      child: Row
+                      (
+                        children: <Widget>
+                        [
+                          Text
+                          (
+                            date,
+                            style: TextStyle
+                            (
+                              color: Colors.grey,
+                              fontSize: 14.0,
+                            ),
+                          ),
+                          Spacer(),
+                          Text
+                          (
+                            time,
+                            style: TextStyle
+                            (
+                              color: Colors.grey,
+                              fontSize: 14.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),      
+            
 
             
 
